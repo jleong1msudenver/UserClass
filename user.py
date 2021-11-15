@@ -19,7 +19,7 @@ class User:
         self.age = age
 
     def setPhoneNumber(self, phoneNumber):
-        self._phoneNumber = phoneNumber
+        self.phoneNumber = phoneNumber
 
     def getFirstName(self):
         return self.firstName
@@ -37,5 +37,5 @@ class User:
         return self.phoneNumber
 
     def DescribeUser(self):
-        complete_user_profile = f"Please verify your profile information below. \n First Name: {self.firstName} Last Name: {self.lastName} \n Email: {self.email} \n Age: {self.age} \n Phone Number: {self.phoneNumber}"
+        complete_user_profile = f"Please verify your profile information below. \n First Name: {self.firstName} \n Last Name: {self.lastName} \n Email: {self.email} \n Age: {self.age} \n Phone Number: {self.phoneNumber}"
         return complete_user_profile.upper()
