@@ -7,27 +7,47 @@ class User:
         self.age = age
         self.phoneNumber = phoneNumber
         
+    def getFirstName(self):
+        return self.firstName
 
+    def setFirstName(self, firstName):
+        self.firstName = firstName
+
+    def getLastName(self):
+        return self.lastName
+
+    def setLastName(self, lastName):
+        self.lastName = lastName
+
+    def getEmail(self):
+        return self.email
+
+    def setEmail(self, email):
+        self.email = email
+
+    def getAge(self):
+        return self.age
+
+    def setAge(self, age):
+        self.age = age
+
+    def getPhoneNumber(self):
+        return self.phoneNumber
+
+    def setPhoneNumber(self, phoneNumber):
+        self.phoneNumber = phoneNumber
 
     def describe_user(self):
         print(f"Please verify your information below. \n First Name: {self.firstName} Last Name: {self.lastName} \n Email: {self.email} Age: {self.age} \n Phone Number: {self.phoneNumber}")
 
-
-
 me = User("Josh", "Leong", "leong.jo@gmail.com", 35, "310-382-6484")
 me.describe_user()
 
-
-
-
+    # def getFastName()
     # def setFirstName()
-    
-    # def setLastName()
     # def getLastName()
+    # def setLastName()
 
-
-
-# create setter and getter
 
 
 '''
