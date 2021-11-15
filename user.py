@@ -1,4 +1,3 @@
-
 class User:
     def __init__(self, firstName, lastName, email, age, phoneNumber):
         self.firstName = firstName
@@ -6,56 +5,37 @@ class User:
         self.email = email
         self.age = age
         self.phoneNumber = phoneNumber
-        
-    def getFirstName(self):
-        return self.firstName
 
     def setFirstName(self, firstName):
         self.firstName = firstName
 
-    def getLastName(self):
-        return self.lastName
-
     def setLastName(self, lastName):
         self.lastName = lastName
-
-    def getEmail(self):
-        return self.email
 
     def setEmail(self, email):
         self.email = email
 
-    def getAge(self):
-        return self.age
-
     def setAge(self, age):
         self.age = age
+
+    def setPhoneNumber(self, phoneNumber):
+        self._phoneNumber = phoneNumber
+
+    def getFirstName(self):
+        return self.firstName
+
+    def getLastName(self):
+        return self.lastName
+
+    def getEmail(self):
+        return self.email
+
+    def getAge(self):
+        return self.age
 
     def getPhoneNumber(self):
         return self.phoneNumber
 
-    def setPhoneNumber(self, phoneNumber):
-        self.phoneNumber = phoneNumber
-
-    def describe_user(self):
-        print(f"Please verify your information below. \n First Name: {self.firstName} Last Name: {self.lastName} \n Email: {self.email} Age: {self.age} \n Phone Number: {self.phoneNumber}")
-
-newUser = User("Josh", "Leong", "leong.jo@gmail.com", 35, "310-382-6484")
-newUser.describe_user()
-
-
-
-'''
-9-3. Users: Make a class called User. Create two attributes called first_name and last_name, 
-and then create several other attributes that are typically stored in a user profile. Make a 
-method called describe_user() that prints a summary of the user’s information. Make another method 
-called greet_user() that prints a personalized greeting to the user.
-Create several instances representing different users, and call both methods for each user.
-'''
-
-
-
-# The first file we build the class 
-# The next file is about my car using the class
-# The next file is about making different types of cars
-# make a new car 
+    def DescribeUser(self):
+        complete_user_profile = f"Please verify your profile information below. \n First Name: {self.firstName} Last Name: {self.lastName} \n Email: {self.email} \n Age: {self.age} \n Phone Number: {self.phoneNumber}"
+        return complete_user_profile.upper()
