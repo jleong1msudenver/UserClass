@@ -40,13 +40,8 @@ class User:
     def describe_user(self):
         print(f"Please verify your information below. \n First Name: {self.firstName} Last Name: {self.lastName} \n Email: {self.email} Age: {self.age} \n Phone Number: {self.phoneNumber}")
 
-me = User("Josh", "Leong", "leong.jo@gmail.com", 35, "310-382-6484")
-me.describe_user()
-
-    # def getFastName()
-    # def setFirstName()
-    # def getLastName()
-    # def setLastName()
+newUser = User("Josh", "Leong", "leong.jo@gmail.com", 35, "310-382-6484")
+newUser.describe_user()
 
 
 
