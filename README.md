@@ -9,3 +9,5 @@
 - [ ] 7) Each object is in a separate file, named <lastname>.py where <lastname> is the last name of the object you created.
 - [ ] 8) Zip the 4 files together and submit online.
 Hint: Take a look at car.py and car3.py from class  notes last week for examples.
+
+* Figured out get and set issue with name not updating from here: [DataCamp] (https://www.datacamp.com/community/tutorials/property-getters-setters)
